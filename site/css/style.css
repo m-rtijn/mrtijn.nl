@@ -15,3 +15,13 @@ h2,
 h3 {
     line-height: 1.2;
 }
+
+.centerimg {
+    text-align: center;
+    display: block;
+}
+
+body code,pre {
+    background-color: #f4f4f4;
+    overflow: auto;
+}
