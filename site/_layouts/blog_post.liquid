@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Martijn's blog</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
     <article>
-        <header>
-            <h1>Martijn's blog</h1>
-        </header>
-        <nav>
-            <a href="/">Main</a>
-            <a href="/blog"><b>Blog</b></a>
-        </nav>
+    <div>
+      <h2>Martijn's blog</h2>
+      <nav>
+        <a href="/">Main</a>
+        <a href="/blog.html">Blog</a>
+      </nav>
 
-        <p><b>Posts:</b></p>
-        <p>
-            <a href="/blog/2018-10-22_How_I_should_use_GPG.html">
-            2018-10-22 How I (should) use GPG
-            </a>
-            <br>
-            <a href="/blog/2018-09-19_Actually_using_the_RTL-SDR_the_way_it_was_meant_to_be_used.html">
-            2018-09-19 Actually using the RTL-SDR the way it was meant to be used
-            </a>
-        </p>
+      <h2>{{ page.title }}</h2>
+      <h3><i>{{ page.description }}</i></h3>
 
+      {{ page.content }}
+    </div>
     </article>
     <footer>
         <small>
@@ -41,8 +34,8 @@
             <a href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="CC-BY-SA 4.0
             International" src="/static/ccbysa4.0_small.png"></a>
         <br>
-            Last updated on 2018-10-21.
+            Last updated on 2019-07-06.
         </small>
     </footer>
-</body>
+  </body>
 </html>
