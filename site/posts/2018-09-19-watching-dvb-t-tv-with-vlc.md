@@ -3,9 +3,10 @@ title: Actually using a RTL-SDR stick the way it was meant to be used
 description: Watching DVB-T TV with VLC
 layout: blog_post.liquid
 published_date: 2018-09-19 16:00:00 +0200
+data:
+    last_updated_date: 2018-10-21
+    published_date: 2018-09-19
 ---
-
-_2018-09-19_
 
 So a few days ago, I experienced the rare moment where I actually wanted
 to watch some TV. I however don't own one, but I do have a computer and
