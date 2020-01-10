@@ -15,6 +15,6 @@ You can email me at [martijn@mrtijn.nl](mailto:martijn@mrtijn.nl). I prefer to e
 OpenPGP, so if you do too, [my key is 0x58EA41835C11AB1B](/static/martijn@mrtijn.nl.asc)
 
 ## Me on the web
-* GitHub: [Tijndagamer@github](https://github.com/Tijndagamer)
+* GitHub: [m-rtijn@github](https://github.com/m-rtijn)
 * GitLab: [mrtijn@gitlab](https://gitlab.com/mrtijn)
 * [My blog](/blog.html)
