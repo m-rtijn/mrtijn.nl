@@ -2,6 +2,8 @@
 layout: default.liquid
 
 title: Martijn's website
+data:
+    last_updated_date: 2020-01-30
 ---
 
 Welcome to my humble webpage on the vast internet! I am Martijn, and I use _mrtijn_ as my
