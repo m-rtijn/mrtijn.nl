@@ -24,3 +24,5 @@ OpenPGP, so if you do too, [my key is 0x58EA41835C11AB1B](/static/martijn@mrtijn
 
 * [Software was a mistake](https://softwarewasamistake.eu): sometimes software is so bad,
 that you might think it was a mistake to start with it at all.
+* [Summary of _Capital and ideology_](projects/kapitaal-en-ideologie.html): I wrote a Dutch
+summary of Piketty's book.
