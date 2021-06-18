@@ -4,6 +4,7 @@ title = "Martijn's website"
 author = "Martijn"
 copyright = "Copyright 2021 Martijn, CC BY-SA 4.0"
 theme = "hugo-bearblog"
+publishDir = "publish"
 
 # Language settings
 defaultContentLanguage ="en"
