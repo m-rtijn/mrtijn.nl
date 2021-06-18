@@ -1,5 +1,5 @@
 {{ if .IsTranslated }}
-{{ range .Translations }}
+{{ range .AllTranslations }}
 {{ if eq .Lang "nl" }}
 <a href="{{ .Permalink }}"><img src="/NL.svg" width="16" height="8"></a>
 {{ end }}
