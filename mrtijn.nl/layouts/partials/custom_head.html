@@ -1,10 +1,10 @@
 {{ if .IsTranslated }}
 {{ range .AllTranslations }}
 {{ if eq .Lang "nl" }}
-<a href="{{ .Permalink }}"><img src="/NL.svg" width="16" height="8"></a>
+<a href="{{ .Permalink }}"><img src="/NL.svg" width="16" height="8" alt="NL"></a>
 {{ end }}
 {{ if eq .Lang "en" }}
-<a href="{{ .Permalink }}"><img src="/UK.svg" width="16" height="8"></a>
+<a href="{{ .Permalink }}"><img src="/UK.svg" width="16" height="8" alt="EN"></a>
 {{ end }}
 {{ end }}
 {{ end }}
