@@ -1,7 +1,0 @@
-
-site:
-  title: Martijn's blog
-  description: My personal blog
-  base_url: https://mrtijn.nl/
-posts:
-  rss: rss.xml
