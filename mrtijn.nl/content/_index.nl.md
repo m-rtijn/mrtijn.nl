@@ -15,4 +15,5 @@ dat je denkt dat het misschien een vergissing was om er überhaupt mee te beginn
 Je kan me mailen via [martijn@mrtijn.nl](mailto:martijn@mrtijn.nl).
 
 ## Ik op het web
+* Mijn blog: [mrtijn.nl/blog](/nl/blog) ([RSS feed](/nl/blog/index.xml))
 * GitHub: [m-rtijn@github](https://github.com/m-rtijn)

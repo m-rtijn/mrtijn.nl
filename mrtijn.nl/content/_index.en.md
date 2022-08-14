@@ -17,4 +17,5 @@ that you might think it was a mistake to start with it at all.
 You can email me at [martijn@mrtijn.nl](mailto:martijn@mrtijn.nl).
 
 ## Me on the web
+* My blog: [mrtijn.nl/blog](/blog) ([RSS feed](/blog/index.xml))
 * GitHub: [m-rtijn@github](https://github.com/m-rtijn)
