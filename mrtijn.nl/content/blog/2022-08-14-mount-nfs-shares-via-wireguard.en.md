@@ -5,6 +5,8 @@ date = "2022-08-14T12:00:00+0200"
 
 I use [Wireguard](https://www.wireguard.com/) to remotely connect to some self-hosted services.
 One of these services is a simple fileserver via [NFS](https://en.wikipedia.org/wiki/Network_File_System).
+I however ran into some problems when I tried to automatically mount NFS shares over Wireguard via fstab.
+In this post, I will show what my problems was and how I fixed it.
 
 ## Prerequisites
 
@@ -12,16 +14,17 @@ I am assuming that you have a server and a client, which are connected via
 Wireguard. The client runs a Linux-distribution with systemd and automatically
 starts Wireguard at boot by use of the `wg-quick@wg0.service` systemd service.
 
-The client needs to have the `nfs-common` package installed so it can NFS
-shares. The server has made at least one NFS share available to the client.
+The client needs to be able to mount NFS shares. On Debian-based distributions,
+the `nfs-common` package has to be installed for this.
+The server has made at least one NFS share available to the client.
 
 ## Manual mounting
 
-Mounting an NFS share over Wireguard is just as easy as mounting a share that
+Mounting an NFS share over Wireguard works the same as mounting a share that
 is made available via on a LAN. Let's say we're connected via Wireguard to
 our server, and this server has `10.0.0.2` as its IP in the Wireguard VPN. This
 server has made the share `/nfs/exampleshare` available to us. Mounting this share
-manually to `/mnt/nfs` is done just like a local share:
+manually to `/mnt/nfs` is done just like on a local share:
 
 ```
 # mount 10.0.0.2:/nfs/exampleshare /mnt/nfs
