@@ -24,7 +24,7 @@ Mounting an NFS share over Wireguard works the same as mounting a share that
 is made available via on a LAN. Let's say we're connected via Wireguard to
 our server, and this server has `10.0.0.2` as its IP in the Wireguard VPN. This
 server has made the share `/nfs/exampleshare` available to us. Mounting this share
-manually to `/mnt/nfs` is done just like on a local share:
+manually to `/mnt/nfs` is done in the same manner as for a local share:
 
 ```
 # mount 10.0.0.2:/nfs/exampleshare /mnt/nfs
