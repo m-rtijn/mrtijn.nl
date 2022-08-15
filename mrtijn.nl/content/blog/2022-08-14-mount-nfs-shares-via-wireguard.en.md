@@ -5,8 +5,8 @@ date = "2022-08-14T12:00:00+0200"
 
 I use [Wireguard](https://www.wireguard.com/) to remotely connect to some self-hosted services.
 One of these services is a simple fileserver via [NFS](https://en.wikipedia.org/wiki/Network_File_System).
-I however ran into some problems when I tried to automatically mount NFS shares over Wireguard via fstab.
-In this post, I will show what my problems was and how I fixed it.
+I however ran into a problem when I tried to automatically mount NFS shares over Wireguard via fstab.
+In this post, I will show what my problem was and how I fixed it.
 
 ## Prerequisites
 
