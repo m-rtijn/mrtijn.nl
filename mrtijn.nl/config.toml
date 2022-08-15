@@ -2,7 +2,7 @@ baseURL = "https://mrtijn.nl/"
 languageCode = "en-us"
 title = "Martijn's website"
 author = "Martijn"
-copyright = "Copyright 2021 Martijn, CC BY-SA 4.0"
+copyright = "Copyright 2018 - 2022 Martijn, CC BY-SA 4.0"
 theme = "hugo-bearblog"
 publishDir = "publish"
 
