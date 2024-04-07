@@ -30,11 +30,32 @@ manually to `/mnt/nfs` is done in the same manner as for a local share:
 # mount 10.0.0.2:/nfs/exampleshare /mnt/nfs
 ```
 
-## Mounting at boot
-
+## The problem
 You can put the NFS share in fstab, but when I tried this I ran into a problem:
-*fstab automounting is done before Wireguard is set up*.
-So, I figured out that you can create your own `.mount` systemd units.
+*fstab automounting is done before Wireguard is set up*. Luckily, this can be
+easily fixed by setting up the correct dependencies between systemd units.
+I discuss two approaches to do this.
+
+## Mounting at boot (the new and better solution)
+
+*Added on 2024-04-07*
+
+Nowadays it is possible to specify systemd-specific options directly in your fstab file,
+which will then be converted automatically by systemd during the conversion of fstab entries
+into systemd `.mount` units. To read more about this, please
+[refer to systemd.mount(5)](https://www.man7.org/linux/man-pages/man5/systemd.mount.5.html#FSTAB).
+To ensure the correct dependencies between mounting the NFS share and setting up Wireguard,
+you can add the following rule to your fstab:
+```
+/mnt/nfs 10.0.0.2:/nfs/exampleshare nfs defaults,x-systemd.requires=wg-quick@wg0.service 0 0
+```
+
+The crux here is the `x-systemd.requires=wg-quick@wg0.service` option. You can change
+the other options to your liking of course.
+
+## Mounting at boot (the old solution)
+
+The old approach is to create manual `.mount` systemd units.
 That way, you can customize *when* your NFS share is mounted. Systemd actually
 uses these `.mount` units to mount devices and shares according to the entries
 in `/etc/fstab`.
